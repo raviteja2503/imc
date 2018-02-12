@@ -23,7 +23,7 @@ app.set('view' , __dirname + '/views');
 app.use(bodyParser.urlencoded({extended: true})); 
 app.use(bodyParser.json());
 app.use(errorhandler());
-app.use(multer({ dest: '../uploads/',
+app.use(multer({ dest: './uploads/',
 		rename: function (fieldname, filename) {
 			return Math.random()+Date.now();
 		},

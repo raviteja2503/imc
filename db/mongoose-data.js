@@ -1,6 +1,7 @@
 var mongoose = require('mongoose'),
 config = require('../libs/config'),
-db = mongoose.connect('mongodb://'+config.get('mongoose:host')+'/'+config.get('mongoose:dbName'), {server: {auto_reconnect: true}});
+// db = mongoose.connect('mongodb://'+config.get('mongoose:host')+'/'+config.get('mongoose:dbName'), {server: {auto_reconnect: true}});
+db = mongoose.connect('mongodb://ravi:iotblog@ds127888.mlab.com:27888/iotblog', {server: {auto_reconnect: true}});
 //db.on('erroror', console.erroror.bind(console, 'connection erroror:')),
 
 //db.open();
