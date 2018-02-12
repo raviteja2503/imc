@@ -1,0 +1,21 @@
+{
+    "port" : 5050,
+    "security": {
+        "tokenLife" : 3600
+    },
+    "mongoose": {
+        "host": "localhost",
+        "dbName":"iotblog"
+    },
+    "smtpConfig": {
+        "host": "smtp.gmail.com",
+        "secureConnection": false,
+        "port": 587,
+        "auth": {
+            "user" : "contactmailstabilitygroup",
+            "pass" : "StabilityAutomation"
+        },
+        "from": "info@iotmentorclub.com"
+    }
+}
+
