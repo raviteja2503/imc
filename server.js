@@ -58,7 +58,7 @@ if (cluster.isMaster) {
 		cluster.fork();
 	});
 } else {
-	app.listen(5050, function(){
+	app.listen(process.env.PORT || 5050, function() {
 	    console.log(app.settings.env + ';__dirname:' + __dirname + ';');
 	    console.log('IOTMentor Club API Server started @ Port : ' + this.address().port);
 	}); 
